@@ -1,5 +1,3 @@
-#include <LiquidCrystal_I2C.h>
-
 #define trigPinSPEED 11
 #define echoPinSPEED 10
 #define trigPinCOUNTER 13
@@ -17,9 +15,6 @@ float speed = 0;
 int counter = 0;
 int currentState = 0;
 int previousState = 0;
-
-// setup LCD
-LiquidCrystal_I2C lcd(0x3F, 16, 2); // I2C address, 16 columns, and 2 rows
 
 void setup(){
   Serial.begin(9600);
